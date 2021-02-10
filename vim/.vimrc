@@ -3,7 +3,7 @@ if &cp
 en
 
 fu! s:packager_init(packager) abort
-  cal a:packager.add('kristijanhusak/vim-packager', #{ type: 'opt' })
+  cal a:packager.add('kristijanhusak/vim-packager', { 'type': 'opt' })
 endf
 
 let s:script_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
